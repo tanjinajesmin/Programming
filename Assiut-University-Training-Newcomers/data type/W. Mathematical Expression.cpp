@@ -1,22 +1,21 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
-    long long int A,B,C;
-    char S,Q;
-    cin>>A>>S>>B>>Q>>C;
-
-    if(((S=='+'&& Q=='=' )&& (A + B) == C)|| ((S== '-' && Q=='=')&& (A - B == C))||((S=='*'&& Q == '=')&&(A * B == C))){
-        cout<<"Yes"<<endl;
+    double A,B,C;
+    char S , Q;
+    cin >> A >>S>> B >>Q >> C;
+    if(A + B == C || A - B == C || A * B == C){
+        cout << "Yes";
     }
-    else if(S=='+'){
-            cout<<A+B<<endl;
+    else if(S == '+') {
+        cout << A + B << endl;
     }
-    else if(S=='-'){
-        cout<<A-B<<endl;
+    else if(S == '-'){
+        cout << A - B << endl;
     }
-    else if(S=='*'){
-        cout<<A*B<<endl;
+    else if(S == '*'){
+        cout << A*B << endl;
     }
 
     return 0;
